@@ -21,7 +21,7 @@ const Icons = styled.div`
 
 const Line = styled.span`
   width: 2px;
-  height: 8rem;
+  height: 5rem;
   background-color: ${(props) => props.theme.text};
 `;
 
