@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styled, { ThemeProvider, keyframes } from "styled-components";
 
+import BigTitle from "./subComponents/BigTitle";
 import Card from "./subComponents/Card";
 import { DarkTheme } from "./Themes";
 import LogoComponent from "./subComponents/LogoComponent";
@@ -13,7 +14,9 @@ const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   height: 400vh;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
 `;
 
 const Main = styled.ul`
@@ -57,16 +60,15 @@ const WorkPage = () => {
         <LogoComponent theme="dark" />
         <SocialIcons theme="dark" />
         <PowerButton />
-
         <Main ref={ref}>
           {Work.map((d) => {
             return <Card key={d.id} data={d} />;
           })}
         </Main>
-
         <Rotate ref={yingyangRef}>
           <YinYang width={80} height={80} fill={DarkTheme.text} />
         </Rotate>
+        <BigTitle text="WORK" top="10%" right="20%" />
       </Box>
     </ThemeProvider>
   );
