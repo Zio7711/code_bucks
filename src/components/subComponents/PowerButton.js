@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { PowerBtn } from "../components/AllSvgs";
+import { PowerBtn } from "../AllSvgs";
 import React from "react";
 import styled from "styled-components";
 

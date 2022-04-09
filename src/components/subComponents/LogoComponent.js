@@ -1,4 +1,4 @@
-import { DarkTheme } from "../components/Themes";
+import { DarkTheme } from "../Themes";
 import React from "react";
 import styled from "styled-components";
 

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import Intro from "./Intro";
-import LogoComponent from "../subComponents/LogoComponent";
+import LogoComponent from "./subComponents/LogoComponent";
 import { NavLink } from "react-router-dom";
-import PowerButton from "../subComponents/PowerButton";
-import SocialIcons from "../subComponents/SocialIcons";
+import PowerButton from "./subComponents/PowerButton";
+import SocialIcons from "./subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
 import { motion } from "framer-motion";
 

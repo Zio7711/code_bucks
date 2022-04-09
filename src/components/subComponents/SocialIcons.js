@@ -1,6 +1,6 @@
-import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
+import { Facebook, Github, Twitter, YouTube } from "../AllSvgs";
 
-import { DarkTheme } from "../components/Themes";
+import { DarkTheme } from "../Themes";
 import { NavLink } from "react-router-dom";
 import React from "react";
 import styled from "styled-components";
