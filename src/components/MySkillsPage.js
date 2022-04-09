@@ -1,6 +1,7 @@
 import { Design, Develope } from "./AllSvgs";
 import styled, { ThemeProvider } from "styled-components";
 
+import BigTitle from "./subComponents/BigTitle";
 import { LightTheme } from "./Themes";
 import LogoComponent from "./subComponents/LogoComponent";
 import ParticleComponent from "./subComponents/ParticleComponent";
@@ -138,6 +139,8 @@ const MySkillsPage = () => {
             </ul>
           </Description>
         </Main>
+
+        <BigTitle text="SKILLS" top="80%" right="30%" />
       </Box>
     </ThemeProvider>
   );

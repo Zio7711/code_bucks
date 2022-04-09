@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 import AnchorComponent from "./subComponents/Anchor";
+import BigTitle from "./subComponents/BigTitle";
 import BlogComponent from "./BlogComponent";
 import { Blogs } from "../data/BlogData";
 import LogoComponent from "./subComponents/LogoComponent";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import img from "../assets/Images/patrick-tomasso.jpg";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
   background-image: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,6 +39,18 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
   grid-gap: calc(1rem + 2vw);
 `;
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+      duration: 0.5,
+    },
+  },
+};
+
 const BlogPage = () => {
   const [numbers, setNumbers] = useState(0);
 
@@ -46,7 +60,15 @@ const BlogPage = () => {
   }, []);
 
   return (
-    <MainContainer>
+    <MainContainer
+      variants={container}
+      initial="hidden"
+      animate="show"
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.5 },
+      }}
+    >
       <Container>
         <LogoComponent />
         <PowerButton />
@@ -60,6 +82,7 @@ const BlogPage = () => {
             })}
           </Grid>
         </Center>
+        <BigTitle text="BLOG" top="5rem" left="5rem" />
       </Container>
     </MainContainer>
   );

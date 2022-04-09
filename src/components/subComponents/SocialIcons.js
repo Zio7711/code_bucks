@@ -3,6 +3,7 @@ import { Facebook, Github, Twitter, YouTube } from "../AllSvgs";
 import { DarkTheme } from "../Themes";
 import { NavLink } from "react-router-dom";
 import React from "react";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const Icons = styled.div`
@@ -20,7 +21,7 @@ const Icons = styled.div`
   }
 `;
 
-const Line = styled.span`
+const Line = styled(motion.span)`
   width: 2px;
   height: 5rem;
   background-color: ${(props) =>
@@ -30,7 +31,11 @@ const Line = styled.span`
 const SocialIcons = (props) => {
   return (
     <Icons>
-      <div>
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.0 }}
+      >
         <NavLink
           style={{ color: "inherit" }}
           to={{ pathname: "https://github.com/zio7711" }}
@@ -42,9 +47,13 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </NavLink>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.2 }}
+      >
         <NavLink
           style={{ color: "inherit" }}
           to={{ pathname: "https://github.com/zio7711" }}
@@ -56,9 +65,13 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </NavLink>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.4 }}
+      >
         <NavLink
           style={{ color: "inherit" }}
           to={{ pathname: "https://github.com/zio7711" }}
@@ -70,9 +83,13 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </NavLink>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.6 }}
+      >
         <NavLink
           style={{ color: "inherit" }}
           to={{ pathname: "https://github.com/zio7711" }}
@@ -84,9 +101,20 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </NavLink>
-      </div>
+      </motion.div>
 
-      <Line color={props.theme} />
+      <Line
+        color={props.theme}
+        initial={{ height: 0 }}
+        animate={{
+          height: "8rem",
+        }}
+        transition={{
+          type: "spring",
+          duration: 1,
+          delay: 0.8,
+        }}
+      />
     </Icons>
   );
 };

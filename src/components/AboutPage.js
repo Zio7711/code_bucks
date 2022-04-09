@@ -1,5 +1,6 @@
 import styled, { ThemeProvider, keyframes } from "styled-components";
 
+import BigTitle from "./subComponents/BigTitle";
 import { DarkTheme } from "./Themes";
 import LogoComponent from "./subComponents/LogoComponent";
 import ParticleComponent from "./subComponents/ParticleComponent";
@@ -91,6 +92,8 @@ const AboutPage = () => {
           <br />I believe everything is an Art when you put your consciousness
           in it. You can connect with me via social links.
         </Main>
+
+        <BigTitle text="ABOUT" top="10%" left="5%" />
       </Box>
     </ThemeProvider>
   );
