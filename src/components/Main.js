@@ -7,6 +7,7 @@ import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
 
+//main screen component
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
   width: 100vw;
