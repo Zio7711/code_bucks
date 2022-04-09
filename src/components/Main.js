@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
+import Intro from "./Intro";
 import LogoComponent from "../subComponents/LogoComponent";
 import { NavLink } from "react-router-dom";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
+import { motion } from "framer-motion";
 
 //main screen component
 const MainContainer = styled.div`
@@ -163,27 +165,38 @@ const Main = () => {
             to={{ pathname: "mailto:zi.ao.tan@outlook.com" }}
             target="_blank"
           >
-            <h3>Say Hi...</h3>
+            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              Say Hi...
+            </motion.h2>
           </Contact>
 
           <Blog to="/blog">
-            <h3>Blog</h3>
+            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              Blog
+            </motion.h2>
           </Blog>
 
           <Work to="/work" click={click}>
-            <h3>Work</h3>
+            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              Work
+            </motion.h2>
           </Work>
 
           <BottomBar>
             <About to="/about" click={click}>
-              <h3>About.</h3>
+              <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                About.
+              </motion.h2>
             </About>
 
             <Skills to="/skills">
-              <h3>My Skills.</h3>
+              <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                My Skills.
+              </motion.h2>
             </Skills>
           </BottomBar>
         </Container>
+        {click && <Intro />}
       </MainContainer>
     </div>
   );
