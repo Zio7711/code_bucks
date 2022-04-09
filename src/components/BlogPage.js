@@ -1,9 +1,10 @@
+import React, { useEffect, useState } from "react";
+
 import AnchorComponent from "./subComponents/Anchor";
 import BlogComponent from "./BlogComponent";
 import { Blogs } from "../data/BlogData";
 import LogoComponent from "./subComponents/LogoComponent";
 import PowerButton from "./subComponents/PowerButton";
-import React from "react";
 import SocialIcons from "./subComponents/SocialIcons";
 import img from "../assets/Images/patrick-tomasso.jpg";
 import styled from "styled-components";
@@ -37,13 +38,20 @@ const Grid = styled.div`
   grid-gap: calc(1rem + 2vw);
 `;
 const BlogPage = () => {
+  const [numbers, setNumbers] = useState(0);
+
+  useEffect(() => {
+    let num = (window.innerHeight - 70) / 30;
+    setNumbers(parseInt(num));
+  }, []);
+
   return (
     <MainContainer>
       <Container>
         <LogoComponent />
         <PowerButton />
         <SocialIcons />
-        <AnchorComponent />
+        <AnchorComponent numbers={numbers} />
 
         <Center>
           <Grid>
