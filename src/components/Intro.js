@@ -1,5 +1,6 @@
 import Me from "../assets/Images/profile-img.png";
 import React from "react";
+import { device } from "../config/breakPoints";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
@@ -30,12 +31,35 @@ const Box = styled(motion.div)`
   border-right: 2px solid ${(props) => props.theme.text};
   background-repeat: no-repeat;
   background-size: 100% 2px;
+
+  @media ${device.small} {
+    background: none;
+    flex-direction: column;
+    border-right: none;
+    border-left: none;
+
+    & > :last-child {
+      border-left: 2px solid ${(props) => props.theme.text};
+      border-bottom: 2px solid ${(props) => props.theme.text};
+      border-right: 2px solid ${(props) => props.theme.text};
+    }
+    & > :first-child {
+      border-left: 2px solid ${(props) => props.theme.body};
+      border-top: 2px solid ${(props) => props.theme.body};
+      border-right: 2px solid ${(props) => props.theme.body};
+    }
+  }
 `;
 
 const SubBox = styled.div`
   width: 50%;
   position: relative;
   display: flex;
+
+  @media ${device.small} {
+    width: 100%;
+    height: 50%;
+  }
 
   .pic {
     position: absolute;
@@ -44,6 +68,10 @@ const SubBox = styled.div`
     transform: translate(-50%, 0);
     width: 100%;
     height: auto;
+    @media ${device.small} {
+      height: 100%;
+      object-fit: contain;
+    }
   }
 `;
 
