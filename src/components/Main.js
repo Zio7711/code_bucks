@@ -10,11 +10,12 @@ import { YinYang } from "./AllSvgs";
 import { device } from "../config/breakPoints";
 import { motion } from "framer-motion";
 
+const windowHeight = window.innerHeight;
 //main screen component
 const MainContainer = styled(motion.div)`
   background: ${(props) => props.theme.body};
   width: 100vw;
-  height: 100vh;
+  height: ${window.innerHeight + "px"};
   overflow: hidden;
 
   position: relative;
@@ -114,6 +115,7 @@ to {
 
 const Center = styled.button`
   position: absolute;
+  color: ${(props) => props.theme.text};
   top: ${(props) => (props.click ? "85%" : "50%")};
   left: ${(props) => (props.click ? "92%" : "50%")};
 

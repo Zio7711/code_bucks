@@ -38,7 +38,7 @@ function PowerButton() {
   return (
     <Power>
       <NavLink to="/code_bucks">
-        <PowerBtn width={30} heigh={30} fill="currentColor" />
+        <PowerBtn width={30} heigh={30} fill="black" />
       </NavLink>
     </Power>
   );

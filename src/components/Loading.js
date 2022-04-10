@@ -7,7 +7,8 @@ const LoadingWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  height: ${window.innerHeight + "px"};
   background-color: black;
 `;
 

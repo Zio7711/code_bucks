@@ -14,7 +14,8 @@ import { motion } from "framer-motion";
 const Box = styled(motion.div)`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  height: ${window.innerHeight + "px"};
   position: relative;
   display: flex;
 
