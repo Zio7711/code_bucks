@@ -40,6 +40,9 @@ const Contact = styled(NavLink)`
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
+  @media ${device.small} {
+    color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  }
 `;
 
 const Blog = styled(NavLink)`

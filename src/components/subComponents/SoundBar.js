@@ -63,6 +63,7 @@ const Line = styled.span`
 
 const SoundBar = () => {
   const ref = useRef(null);
+  const clickRef = useRef(null);
 
   const [click, setClick] = useState(false);
 
@@ -75,11 +76,6 @@ const SoundBar = () => {
       ref.current.pause();
     }
   };
-
-  useEffect(() => {
-    ref.current.play();
-    setClick(true);
-  }, []);
 
   return (
     <Box onClick={handleClick}>
