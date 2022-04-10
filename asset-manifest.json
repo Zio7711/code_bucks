@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/zio_profile/static/js/main.e20b62fd.chunk.js",
-    "main.js.map": "/zio_profile/static/js/main.e20b62fd.chunk.js.map",
-    "runtime-main.js": "/zio_profile/static/js/runtime-main.28a719ca.js",
-    "runtime-main.js.map": "/zio_profile/static/js/runtime-main.28a719ca.js.map",
-    "static/css/2.679831fc.chunk.css": "/zio_profile/static/css/2.679831fc.chunk.css",
-    "static/js/2.66a68a91.chunk.js": "/zio_profile/static/js/2.66a68a91.chunk.js",
-    "static/js/2.66a68a91.chunk.js.map": "/zio_profile/static/js/2.66a68a91.chunk.js.map",
-    "index.html": "/zio_profile/index.html",
-    "static/css/2.679831fc.chunk.css.map": "/zio_profile/static/css/2.679831fc.chunk.css.map",
-    "static/js/2.66a68a91.chunk.js.LICENSE.txt": "/zio_profile/static/js/2.66a68a91.chunk.js.LICENSE.txt",
-    "static/media/background_music.949cee7e.mp3": "/zio_profile/static/media/background_music.949cee7e.mp3",
-    "static/media/patrick-tomasso.8ca90014.jpg": "/zio_profile/static/media/patrick-tomasso.8ca90014.jpg",
-    "static/media/profile-img.5179e446.png": "/zio_profile/static/media/profile-img.5179e446.png",
-    "static/media/spaceman.5ec7fcfa.png": "/zio_profile/static/media/spaceman.5ec7fcfa.png"
+    "main.js": "/code_bucks/static/js/main.b9e9d78c.chunk.js",
+    "main.js.map": "/code_bucks/static/js/main.b9e9d78c.chunk.js.map",
+    "runtime-main.js": "/code_bucks/static/js/runtime-main.cf29f846.js",
+    "runtime-main.js.map": "/code_bucks/static/js/runtime-main.cf29f846.js.map",
+    "static/css/2.679831fc.chunk.css": "/code_bucks/static/css/2.679831fc.chunk.css",
+    "static/js/2.7c38f271.chunk.js": "/code_bucks/static/js/2.7c38f271.chunk.js",
+    "static/js/2.7c38f271.chunk.js.map": "/code_bucks/static/js/2.7c38f271.chunk.js.map",
+    "index.html": "/code_bucks/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/code_bucks/static/css/2.679831fc.chunk.css.map",
+    "static/js/2.7c38f271.chunk.js.LICENSE.txt": "/code_bucks/static/js/2.7c38f271.chunk.js.LICENSE.txt",
+    "static/media/background_music.949cee7e.mp3": "/code_bucks/static/media/background_music.949cee7e.mp3",
+    "static/media/patrick-tomasso.8ca90014.jpg": "/code_bucks/static/media/patrick-tomasso.8ca90014.jpg",
+    "static/media/profile-img.5179e446.png": "/code_bucks/static/media/profile-img.5179e446.png",
+    "static/media/spaceman.5ec7fcfa.png": "/code_bucks/static/media/spaceman.5ec7fcfa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.28a719ca.js",
+    "static/js/runtime-main.cf29f846.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.66a68a91.chunk.js",
-    "static/js/main.e20b62fd.chunk.js"
+    "static/js/2.7c38f271.chunk.js",
+    "static/js/main.b9e9d78c.chunk.js"
   ]
 }
