@@ -11,7 +11,7 @@ import { Work } from "../data/WorkData";
 import { YinYang } from "./AllSvgs";
 import { motion } from "framer-motion";
 
-const Box = styled.div`
+const Box = styled(motion.div)`
   background-color: ${(props) => props.theme.body};
   height: 400vh;
   position: relative;
@@ -51,6 +51,17 @@ const container = {
   },
 };
 
+const workPageVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      when: "beforeChildren",
+    },
+  },
+};
+
 const WorkPage = () => {
   const ref = useRef(null);
   const yingyangRef = useRef(null);
@@ -68,7 +79,15 @@ const WorkPage = () => {
 
   return (
     <ThemeProvider theme={DarkTheme}>
-      <Box>
+      <Box
+        variants={workPageVariants}
+        initial="hidden"
+        animate="show"
+        exit={{
+          opacity: 0,
+          transition: { duration: 0.5 },
+        }}
+      >
         <LogoComponent theme="dark" />
         <SocialIcons theme="dark" />
         <PowerButton />

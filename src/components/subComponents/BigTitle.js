@@ -11,7 +11,6 @@ const Text = styled.h1`
   z-index: 0;
 `;
 const BigTitle = (props) => {
-  console.log(props.theme);
   return (
     <Text top={props.top} left={props.left} right={props.right}>
       {props.text}

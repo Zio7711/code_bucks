@@ -8,6 +8,7 @@ import PowerButton from "./subComponents/PowerButton";
 import React from "react";
 import SocialIcons from "./subComponents/SocialIcons";
 import astronaut from "../assets/Images/spaceman.png";
+import { motion } from "framer-motion";
 
 const float = keyframes`
 0% {
@@ -36,7 +37,7 @@ const Spaceman = styled.div`
   }
 `;
 
-const Box = styled.div`
+const Box = styled(motion.div)`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
   height: 100vh;
@@ -67,10 +68,29 @@ const Main = styled.div`
   font-style: italic;
 `;
 
+const aboutPageVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      when: "beforeChildren",
+    },
+  },
+};
+
 const AboutPage = () => {
   return (
     <ThemeProvider theme={DarkTheme}>
-      <Box>
+      <Box
+        variants={aboutPageVariants}
+        initial="hidden"
+        animate="show"
+        exit={{
+          opacity: 0,
+          transition: { duration: 0.5 },
+        }}
+      >
         <LogoComponent theme="dark" />
         <SocialIcons theme="dark" />
         <PowerButton />
