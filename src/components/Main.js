@@ -1,16 +1,16 @@
+import { NavLink, useLocation } from "react-router-dom";
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import Intro from "./Intro";
 import LogoComponent from "./subComponents/LogoComponent";
-import { NavLink } from "react-router-dom";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
 import { motion } from "framer-motion";
 
 //main screen component
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
   background: ${(props) => props.theme.body};
   width: 100vw;
   height: 100vh;
@@ -137,21 +137,61 @@ const DarkDiv = styled.div`
   transition: height 0.5s ease, width 1s ease 0.5s;
 `;
 
+const mainContainerVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: {
+      duration: 1,
+      ease: "easeOut",
+    },
+  },
+};
+
 const Main = () => {
   const [click, setClick] = useState(false);
+  const [movingDirection, setMovingDirection] = useState({});
 
-  const handleClick = () => setClick(!click);
+  const handleClick = (e) => {
+    setClick(!click);
+  };
+
+  const handleLinkClick = (e) => {
+    if (e.target.id === "blog") setMovingDirection({ x: "-100vw" });
+    if (e.target.id === "about" || e.target.id === "skills")
+      setMovingDirection({ y: "-100vh" });
+    if (e.target.id === "work") setMovingDirection({ x: "100vw" });
+  };
 
   return (
     <div>
-      <MainContainer>
-        <DarkDiv click={click} />
+      <MainContainer
+        variants={mainContainerVariants}
+        initial="initial"
+        animate="animate"
+        exit={{
+          ...movingDirection,
+          transition: {
+            duration: 1,
+            ease: "easeOut",
+          },
+        }}
+      >
+        <DarkDiv $click={click} />
         <Container>
           <PowerButton />
           <LogoComponent theme={click ? "dark" : "light"} />
           <SocialIcons theme={click ? "dark" : "light"} />
 
-          <Center click={click}>
+          <Center $click={click}>
             <YinYang
               onClick={() => handleClick()}
               width={click ? 120 : 200}
@@ -193,12 +233,14 @@ const Main = () => {
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              onClick={handleLinkClick}
+              id="blog"
             >
               Blog
             </motion.h2>
           </Blog>
 
-          <Work to="/work" click={click}>
+          <Work to="/work" $click={click}>
             <motion.h2
               initial={{
                 y: -200,
@@ -210,13 +252,15 @@ const Main = () => {
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              onClick={handleLinkClick}
+              id="work"
             >
               Work
             </motion.h2>
           </Work>
 
           <BottomBar>
-            <About to="/about" click={click}>
+            <About to="/about" $click={click}>
               <motion.h2
                 initial={{
                   y: 200,
@@ -228,6 +272,8 @@ const Main = () => {
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                onClick={handleLinkClick}
+                id="about"
               >
                 About.
               </motion.h2>
@@ -245,6 +291,8 @@ const Main = () => {
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                onClick={handleLinkClick}
+                id="skills"
               >
                 My Skills.
               </motion.h2>
