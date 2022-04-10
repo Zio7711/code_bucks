@@ -1,6 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
+import { device } from "../../config/breakPoints";
 import music from "../../assets/audio/background_music.mp3";
 
 const Box = styled.div`
@@ -10,6 +11,11 @@ const Box = styled.div`
   left: 8rem;
   top: 3rem;
   z-index: 10;
+
+  @media ${device.small} {
+    left: 0.5rem;
+    top: 8rem;
+  }
 
   & > *:nth-child(1) {
     animation-delay: 0.2s;
@@ -69,6 +75,12 @@ const SoundBar = () => {
       ref.current.pause();
     }
   };
+
+  useEffect(() => {
+    ref.current.play();
+    setClick(true);
+  }, []);
+
   return (
     <Box onClick={handleClick}>
       <Line click={click} />

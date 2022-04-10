@@ -9,7 +9,7 @@ import ReactDOM from "react-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/code_bucks">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>,

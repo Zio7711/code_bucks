@@ -7,6 +7,7 @@ import LogoComponent from "./subComponents/LogoComponent";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
+import { device } from "../config/breakPoints";
 import { motion } from "framer-motion";
 
 //main screen component
@@ -97,6 +98,17 @@ to {
 }
 `;
 
+const rotateSmall = keyframes`
+from{
+  transform:rotate(0deg) scale(0.8)
+
+}
+
+to {
+  transform:rotate(360deg) scale(0.8)
+}
+`;
+
 const Center = styled.button`
   position: absolute;
   top: ${(props) => (props.click ? "85%" : "50%")};
@@ -114,8 +126,17 @@ const Center = styled.button`
   align-items: center;
   transition: all 1s ease;
 
+  @media ${device.small} {
+    top: ${(props) => (props.click ? "85%" : "50%")};
+    left: ${(props) => (props.click ? "85%" : "50%")};
+  }
+
   & > :first-child {
     animation: ${rotate} infinite 1.5s linear;
+
+    @media ${device.small} {
+      animation: ${rotateSmall} infinite 1.5s linear;
+    }
   }
 
   & > :last-child {

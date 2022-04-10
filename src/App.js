@@ -1,5 +1,5 @@
 import { DarkTheme, LightTheme } from "./components/Themes";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Redirect, Route, Switch, useLocation } from "react-router-dom";
 
 import AboutPage from "./components/AboutPage";
 import { AnimatePresence } from "framer-motion";
@@ -22,7 +22,10 @@ const App = () => {
         <SoundBar />
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
-            <Route exact path="/" component={Main} />
+            <Route exact path="/">
+              <Redirect to="/code_bucks"></Redirect>
+            </Route>
+            <Route exact path="/code_bucks" component={Main} />
             <Route exact path="/about" component={AboutPage} />
             <Route exact path="/blog" component={BlogPage} />
             <Route exact path="/work" component={WorkPage} />

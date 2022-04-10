@@ -37,7 +37,7 @@ const Power = styled.button`
 function PowerButton() {
   return (
     <Power>
-      <NavLink to="/">
+      <NavLink to="/code_bucks">
         <PowerBtn width={30} heigh={30} fill="currentColor" />
       </NavLink>
     </Power>

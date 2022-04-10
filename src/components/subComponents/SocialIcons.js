@@ -3,6 +3,7 @@ import { Facebook, Github, Twitter, YouTube } from "../AllSvgs";
 import { DarkTheme } from "../Themes";
 import { NavLink } from "react-router-dom";
 import React from "react";
+import { device } from "../../config/breakPoints";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
@@ -12,9 +13,16 @@ const Icons = styled.div`
   align-items: center;
 
   position: fixed;
+
   bottom: 0;
   left: 2rem;
   z-index: 3;
+
+  @media ${device.small} {
+    left: 1rem;
+    transform: scale(0.9);
+    transform-origin: bottom;
+  }
 
   & > *:not(:last-child) {
     margin: 0.5rem 0;

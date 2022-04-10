@@ -1,5 +1,6 @@
 import { DarkTheme } from "../Themes";
 import React from "react";
+import { device } from "../../config/breakPoints";
 import styled from "styled-components";
 
 const Logo = styled.h1`
@@ -12,6 +13,10 @@ const Logo = styled.h1`
   left: 2rem;
   top: 2rem;
   z-index: 3;
+
+  @media ${device.small} {
+    left: 0.5rem;
+  }
 `;
 const LogoComponent = (props) => {
   return <Logo color={props.theme}>Zio</Logo>;

@@ -1,6 +1,7 @@
 import { Anchor, Link } from "../AllSvgs";
 import React, { useEffect, useRef } from "react";
 
+import { device } from "../../config/breakPoints";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -21,12 +22,19 @@ const Slider = styled.div`
   .chain {
     transform: rotate(135deg);
   }
+
+  @media ${device.small} {
+    right: 0.2rem;
+  }
 `;
 
 const PreDisplay = styled.div`
   position: absolute;
   top: 0;
   right: 2rem;
+  @media ${device.small} {
+    right: 0.5rem;
+  }
 `;
 const AnchorComponent = (props) => {
   const ref = useRef(null);

@@ -7,6 +7,7 @@ import { Blogs } from "../data/BlogData";
 import LogoComponent from "./subComponents/LogoComponent";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
+import { device } from "../config/breakPoints";
 import img from "../assets/Images/patrick-tomasso.jpg";
 import { motion } from "framer-motion";
 import styled from "styled-components";
@@ -32,12 +33,19 @@ const Center = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 10rem;
+  @media ${device.large} {
+    padding-top: 7rem;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
   grid-gap: calc(1rem + 2vw);
+
+  @media ${device.large} {
+    grid-template-columns: repeat(1, minmax(calc(10rem + 15vw), 1fr));
+  }
 `;
 
 const container = {
