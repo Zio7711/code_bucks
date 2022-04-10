@@ -1,14 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-// import './index.css';
-import App from "./App";
 // import reportWebVitals from './reportWebVitals';
 import "../node_modules/normalize.css";
+
+// import './index.css';
+import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/code_bucks">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
