@@ -8,6 +8,7 @@ import PowerButton from "./subComponents/PowerButton";
 import React from "react";
 import SocialIcons from "./subComponents/SocialIcons";
 import astronaut from "../assets/Images/spaceman.png";
+import { device } from "../config/breakPoints";
 import { motion } from "framer-motion";
 
 const float = keyframes`
@@ -43,6 +44,9 @@ const Box = styled(motion.div)`
   height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Main = styled.div`
@@ -51,8 +55,11 @@ const Main = styled.div`
   padding: 2rem;
   width: 50vw;
   height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  z-index: 3;
+  /* z-index: 3; */
   line-height: 1.5;
 
   display: flex;
@@ -61,9 +68,16 @@ const Main = styled.div`
   font-size: calc(0.6rem + 1vw);
   backdrop-filter: blur(4px);
 
-  position: absolute;
-  left: calc(5rem + 5vw);
-  top: 10rem;
+  /* position: absolute;
+  left: calc(5rem + 5vw); */
+
+  /* top: 10rem; */
+  @media ${device.small} {
+    left: calc(3rem + 5vw);
+    top: 7rem;
+    height: calc(10rem + 70vw);
+  }
+
   font-family: "Ubutntu Mono", monospace;
   font-style: italic;
 `;

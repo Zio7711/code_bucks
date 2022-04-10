@@ -1,6 +1,7 @@
 import { Github } from "../AllSvgs";
 import { NavLink } from "react-router-dom";
 import React from "react";
+import { device } from "../../config/breakPoints";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
@@ -23,14 +24,19 @@ const Box = styled(motion.li)`
     color: ${(props) => props.theme.text};
     border: 1px solid ${(props) => props.theme.text};
   }
+
+  @media ${device.small} {
+    height: 35vh;
+    width: 12em;
+  }
 `;
 
 const Title = styled.h2`
-  font-size: calc(1em+ 0.5vw);
+  font-size: calc(1em + 0.5vw);
 `;
 
 const Description = styled.h2`
-  font-size: calc(0.8em+ 0.3vw);
+  font-size: calc(0.8em + 0.3vw);
   font-family: "Karla", sans-serif;
   font-weight: 500;
 `;

@@ -8,6 +8,7 @@ import ParticleComponent from "./subComponents/ParticleComponent";
 import PowerButton from "./subComponents/PowerButton";
 import React from "react";
 import SocialIcons from "./subComponents/SocialIcons";
+import { device } from "../config/breakPoints";
 import { motion } from "framer-motion";
 
 const Box = styled(motion.div)`
@@ -16,6 +17,12 @@ const Box = styled(motion.div)`
   height: 100vh;
   position: relative;
   display: flex;
+
+  @media ${device.small} {
+    height: fit-content;
+    flex-direction: column;
+    padding: 5rem 0;
+  }
 
   justify-content: space-evenly;
   align-items: center;
@@ -31,6 +38,12 @@ const Main = styled.div`
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
+
+  @media ${device.small} {
+    margin-top: 2rem;
+    width: 50vw;
+    height: 15rem;
+  }
 
   font-family: "Ubuntu Mono", monospace;
   display: flex;

@@ -9,6 +9,7 @@ import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import { Work } from "../data/WorkData";
 import { YinYang } from "./AllSvgs";
+import { device } from "../config/breakPoints";
 import { motion } from "framer-motion";
 
 const Box = styled(motion.div)`
@@ -26,8 +27,12 @@ const Main = styled(motion.ul)`
   left: calc(10rem + 15vw);
   height: 40vh;
   display: flex;
-
   color: white;
+
+  @media ${device.small} {
+    top: calc(18vh + 6rem);
+    left: calc(8vw + 3rem);
+  }
 `;
 
 const Rotate = styled.span`
