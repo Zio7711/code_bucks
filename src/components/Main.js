@@ -185,13 +185,13 @@ const Main = () => {
           },
         }}
       >
-        <DarkDiv $click={click} />
+        <DarkDiv click={click ? true : undefined} />
         <Container>
           <PowerButton />
           <LogoComponent theme={click ? "dark" : "light"} />
           <SocialIcons theme={click ? "dark" : "light"} />
 
-          <Center $click={click}>
+          <Center click={click ? true : undefined}>
             <YinYang
               onClick={() => handleClick()}
               width={click ? 120 : 200}
@@ -240,7 +240,7 @@ const Main = () => {
             </motion.h2>
           </Blog>
 
-          <Work to="/work" $click={click}>
+          <Work to="/work" click={click ? true : undefined}>
             <motion.h2
               initial={{
                 y: -200,
@@ -260,7 +260,7 @@ const Main = () => {
           </Work>
 
           <BottomBar>
-            <About to="/about" $click={click}>
+            <About to="/about" click={click ? true : undefined}>
               <motion.h2
                 initial={{
                   y: 200,
