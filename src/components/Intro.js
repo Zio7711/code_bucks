@@ -66,10 +66,11 @@ const SubBox = styled.div`
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 100%;
-    height: auto;
+    width: 120%;
+    /* height: auto; */
+    height: 195%;
     @media ${device.small} {
-      height: 100%;
+      height: 145%;
       object-fit: contain;
     }
   }
