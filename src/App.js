@@ -1,10 +1,10 @@
-import { DarkTheme, LightTheme } from "./components/Themes";
 import { Redirect, Route, Switch, useLocation } from "react-router-dom";
 
 import AboutPage from "./components/AboutPage";
 import { AnimatePresence } from "framer-motion";
 import BlogPage from "./components/BlogPage";
 import GlobalStyle from "./globalStyle";
+import { LightTheme } from "./components/Themes";
 import Main from "./components/Main";
 import MySkillsPage from "./components/MySkillsPage";
 import SoundBar from "./components/subComponents/SoundBar";

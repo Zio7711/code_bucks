@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import { device } from "../../config/breakPoints";
@@ -63,7 +63,6 @@ const Line = styled.span`
 
 const SoundBar = () => {
   const ref = useRef(null);
-  const clickRef = useRef(null);
 
   const [click, setClick] = useState(false);
 

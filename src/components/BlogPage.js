@@ -5,7 +5,6 @@ import BigTitle from "./subComponents/BigTitle";
 import BlogComponent from "./BlogComponent";
 import { Blogs } from "../data/BlogData";
 import LogoComponent from "./subComponents/LogoComponent";
-import { Parallax } from "react-scroll-parallax";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import { device } from "../config/breakPoints";

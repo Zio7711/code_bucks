@@ -1,16 +1,15 @@
-import { NavLink, useLocation } from "react-router-dom";
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import Intro from "./Intro";
 import LogoComponent from "./subComponents/LogoComponent";
+import { NavLink } from "react-router-dom";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
 import { device } from "../config/breakPoints";
 import { motion } from "framer-motion";
 
-const windowHeight = window.innerHeight;
 //main screen component
 const MainContainer = styled(motion.div)`
   background: ${(props) => props.theme.body};

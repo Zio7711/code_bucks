@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import styled, { ThemeProvider, keyframes } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 
 import BigTitle from "./subComponents/BigTitle";
 import Card from "./subComponents/Card";

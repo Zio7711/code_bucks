@@ -1,4 +1,5 @@
 import { DarkTheme } from "../Themes";
+import { Link } from "react-router-dom";
 import React from "react";
 import { device } from "../../config/breakPoints";
 import styled from "styled-components";
@@ -19,7 +20,7 @@ const Logo = styled.h1`
   }
 `;
 const LogoComponent = (props) => {
-  return <Logo color={props.theme}>Zio</Logo>;
+  return <Logo color={props.theme}><Link to='/' style={{'textDecoration':'none'}}>Zio</Link></Logo>;
 };
 
 export default LogoComponent;
