@@ -20,7 +20,7 @@ const Logo = styled.h1`
   }
 `;
 const LogoComponent = (props) => {
-  return <Logo color={props.theme}><Link to='/' style={{'textDecoration':'none'}}>Zio</Link></Logo>;
+  return <Logo color={props.theme}><Link to='/' style={{'textDecoration':'none', 'color':'black'}}>Zio</Link></Logo>;
 };
 
 export default LogoComponent;

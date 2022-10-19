@@ -117,16 +117,14 @@ const AboutPage = () => {
         </Spaceman>
 
         <Main>
-          I'm a front-end developer located in India. I love to create simple
-          yet beautiful websites with great user experience.
+          I'm a front-end developer located in Vancouver. I love coding and building beautiful websites.
           <br />
           <br />
           I'm interested in the whole frontend stack Like trying new things and
-          building great projects. I'm an independent freelancer and blogger. I
-          love to write blogs and read books.
+          building great projects. I love to write blogs as well.
           <br />
-          <br />I believe everything is an Art when you put your consciousness
-          in it. You can connect with me via social links.
+          <br />
+          I also have two years experience in the field of field surveying. I love to try out new things and new skills.
         </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />

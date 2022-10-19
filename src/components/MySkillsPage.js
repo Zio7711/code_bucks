@@ -128,7 +128,7 @@ const MySkillsPage = () => {
             Front End
           </Title>
 
-          <Description>React HTML Css</Description>
+          <Description>HTML, CSS, JavaScript</Description>
           <Description>
             <strong>I like to Design</strong>
             <ul>
@@ -142,8 +142,11 @@ const MySkillsPage = () => {
             <strong>Tools</strong>
             <ul>
               <li>React</li>
-
               <li>Express</li>
+              <li>Vue</li>
+              <li>TypeScript</li>
+              <li>React Native</li>
+
             </ul>
           </Description>
         </Main>
@@ -153,23 +156,24 @@ const MySkillsPage = () => {
             <Develope width={40} height={40} />
             Back End
           </Title>
-          <Description>React HTML Css</Description>
+          <Description>Python, Node.js, Database</Description>
 
           <Description>
             <strong>Skills</strong>
             <ul>
-              <li>Web Design</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>WebSocket</li>
 
-              <li>Mobile Design</li>
             </ul>
           </Description>
 
           <Description>
             <strong>Tools</strong>
             <ul>
-              <li>React</li>
-
+              <li>Fast api</li>
               <li>Express</li>
+              <li>Flask</li>
             </ul>
           </Description>
         </Main>
