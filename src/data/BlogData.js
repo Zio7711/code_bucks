@@ -1,69 +1,75 @@
 export const Blogs = [
-    {
-        id:1,
-        name:"Build Website with ReactJS, Styled-components and GSAP for Scrolling Animations",
-        tags:["react","gsap","styled-components"],
-        date:"13 May, 2021",
-        imgSrc:"https://res.cloudinary.com/practicaldev/image/fetch/s--sBeV06Xc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2yrzy75q4dzibqz6rf82.png",
-        link:"https://dev.to/codebucks/build-website-with-reactjs-styled-components-and-gsap-for-scrolling-animations-2f10"
-    },
-    {
-        id:2,
-        name:"How to create React Hamburger Menu using Styled-Components",
-        tags:["react","styled-components"],
-        date:"5 July, 2021",
-        imgSrc:"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625479747640%2F7KzwP9nmj.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-        link:"https://codebucks.hashnode.dev/react-hamburger-menu"
-    },
-    {
-        id:3,
-        name:"React Loading Screen: Try these 3 cool loading screens for your app",
-        tags:["react","react-lottie","styled-components"],
-        date:"6 July, 2021",
-        imgSrc:"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625552344293%2Fegwis0UIX.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-        link:"https://codebucks.hashnode.dev/react-loading-screens"
-    },
-    {
-        id:4,
-        name:"How to build a Fabulous Todo App using React, Redux and Framer-Motion",
-        tags:["react","redux","framer-motion"],
-        date:"26 May, 2021",
-        imgSrc:"https://res.cloudinary.com/practicaldev/image/fetch/s--r5oUDhhT--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/036s7j5b73up7455rdth.png",
-        link:"https://dev.to/codebucks/build-redux-react-todo-list-app-with-animations-using-framer-motion-1mp1"
-    },
-    {
-        id:5,
-        name:"What is Higher Order Component (HOC) in React JS?",
-        tags:["react","reactJS","web-development"],
-        date:"3 Feb, 2021",
-        imgSrc:"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625295480148%2FlyKj8bpHK.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-        link:"https://codebucks.hashnode.dev/what-is-higher-order-component"
-    },
-    {
-        id:6,
-        name:"How to implement Pagination Component in React from scratch",
-        tags:["react","css"],
-        date:"5 Jan, 2021",
-        imgSrc:"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625240050668%2FGAya9b0XK.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-        link:"https://codebucks.hashnode.dev/pagination-in-react"
+  {
+    id: 1,
+    name: "Which type of loop is fastest in JavaScript?",
+    tags: ["javascript", "loop", "fundamental"],
+    date: "26 March, 2022",
+    imgSrc:
+      "https://tva2.sinaimg.cn/large/0060lm7Tly1ftg6oquldpj318g0p04ak.jpg",
+    link: "https://zio7711.gitee.io/2022/02/13/Which-type-of-loop-is-fastest-in-JavaScript/",
+  },
+  {
+    id: 2,
+    name: "6 Algorithms Every Developer Should Know",
+    tags: ["algorithms", "fundamental", "computer science"],
+    date: "6 February, 2022",
+    imgSrc:
+      "https://tva4.sinaimg.cn/large/0060lm7Tly1ftg6oh633dj31hc0u0qbh.jpg",
+    link: "https://zio7711.gitee.io/2022/02/06/6-Algorithms-Every-Developer-Should-Know/",
+  },
+  {
+    id: 3,
+    name: "Closure",
+    tags: ["javascript", "closure", "fundamental"],
+    date: "5 June, 2021",
+    imgSrc:
+      "https://tva1.sinaimg.cn/large/87c01ec7gy1frmrtcq1lfj21hc0u0qc1.jpg",
+    link: "https://zio7711.gitee.io/2021/06/05/Closure/",
+  },
+  {
+    id: 4,
+    name: "Cross-Site Request Forgery (XSRF)",
+    tags: ["react", "redux", "framer-motion"],
+    date: "2 June, 2021",
+    imgSrc:
+      "https://tva2.sinaimg.cn/large/87c01ec7gy1frmr2kh3xkj21kw0w0e8e.jpg",
+    link: "https://zio7711.gitee.io/2021/06/02/Cross-Site-Request-Forgery-XSRF/",
+  },
+  {
+    id: 5,
+    name: "15 JavaScript codes you will always need",
+    tags: ["javascript", "useful", "tips and tricks"],
+    date: "6 Feb, 2022",
+    imgSrc:
+      "https://tva1.sinaimg.cn/large/87c01ec7gy1frmmu5g157j21hc0u0x6q.jpg",
+    link: "https://zio7711.gitee.io/2022/02/06/15-Javascript-codes-you-will-always-need/",
+  },
+  {
+    id: 6,
+    name: "How to migrate JavaScript web apps to Typescript",
+    tags: ["typescript", "javascript", "migration"],
+    date: "4 February, 2022",
+    imgSrc:
+      "https://tva4.sinaimg.cn/large/87c01ec7gy1frmrs543ivj21hc0u0ths.jpg",
+    link: "https://zio7711.gitee.io/2022/02/04/How-to-migrate-Javascript-web-apps-to-Typescript/",
+  },
 
-    },
-   
-    {
-        id:7,
-        name:"What is Redux ? Simply Explained!",
-        tags:["react","redux","javascript"],
-        date:"16 May, 2021",
-        imgSrc:"https://res.cloudinary.com/practicaldev/image/fetch/s--ZY1EK-Eo--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bcz1u90oq3prr5fga3fs.png",
-        link:"https://dev.to/codebucks/what-is-redux-simply-explained-2ch7"
-    },
-    {
-        id:8,
-        name:"How to create Sidebar navigation menu in ReactJS with react router and framer-motion",
-        tags:["react","framer-motion","styled-components"],
-        date:"26 May, 2021",
-        imgSrc:"https://res.cloudinary.com/practicaldev/image/fetch/s--rv4I8UwE--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0a9h50milhlf1us6mn4a.png",
-        link:"https://dev.to/codebucks/build-sidebar-navigation-menu-in-reactjs-with-react-router-and-framer-motion-for-cool-page-transition-effects-4bc3"
-    },
-  
-] 
+  {
+    id: 7,
+    name: "5 useful tips for writing JavaScript code",
+    tags: ["tips and tricks", "javascript", "fundamental"],
+    date: "11 July, 2021",
+    imgSrc:
+      "https://tva4.sinaimg.cn/large/87c01ec7gy1frmmyljiepj21kw0w0qvf.jpg",
+    link: "https://zio7711.gitee.io/2021/07/11/5-useful-tips-for-writing-JavaScript-code/",
+  },
+  {
+    id: 8,
+    name: "Cross-site Scripting - known as XSS",
+    tags: ["XSS", "cross site scripting", "web security"],
+    date: "1 June, 2021",
+    imgSrc:
+      "https://tva1.sinaimg.cn/large/0060lm7Tly1ftg6omusg9j31hc0u010h.jpg",
+    link: "https://zio7711.gitee.io/2021/06/01/Cross-site-Scripting-known-as-XSS/",
+  },
+];

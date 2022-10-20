@@ -48,6 +48,12 @@ const Grid = styled.div`
   }
 `;
 
+const Intro = styled.div`
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 3.5rem;
+`;
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -90,6 +96,19 @@ const BlogPage = () => {
             })}
           </Grid>
         </Center>
+
+        <Intro>
+          If you want to read more about my blogs, please click{" "}
+          <strong style={{ cursor: "pointer" }}>
+            <a
+              href="https://zio7711.gitee.io/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Here
+            </a>
+          </strong>
+        </Intro>
         <BigTitle text="BLOG" top="5rem" left="5rem" />
       </Container>
     </MainContainer>

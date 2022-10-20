@@ -79,10 +79,10 @@ const Item = {
 const Container = styled(motion.div)``;
 
 const BlogComponent = (props) => {
-  const { name, tags, date, imgSrc } = props.blog;
+  const { name, tags, date, imgSrc, link } = props.blog;
   return (
     <Container variants={Item}>
-      <Box target="_blank" to="{{pathname: link}}">
+      <Box target="_blank" to={{ pathname: link }}>
         <Image img={imgSrc} />
         <Title>{name}</Title>
 
