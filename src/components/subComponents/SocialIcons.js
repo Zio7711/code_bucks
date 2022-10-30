@@ -1,4 +1,4 @@
-import { Facebook, Github, Twitter, YouTube } from "../AllSvgs";
+import { Blog, Email, Github, LinkedIn } from "../AllSvgs";
 
 import { DarkTheme } from "../Themes";
 import { NavLink } from "react-router-dom";
@@ -64,10 +64,10 @@ const SocialIcons = (props) => {
       >
         <NavLink
           style={{ color: "inherit" }}
-          to={{ pathname: "https://github.com/zio7711" }}
+          to={{ pathname: "https://zio7711.gitee.io/" }}
           target="_blank"
         >
-          <Twitter
+          <Blog
             width={25}
             height={25}
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
@@ -82,10 +82,10 @@ const SocialIcons = (props) => {
       >
         <NavLink
           style={{ color: "inherit" }}
-          to={{ pathname: "https://github.com/zio7711" }}
+          to={{ pathname: "mailto:zi.ao.tan@outlook.com" }}
           target="_blank"
         >
-          <Facebook
+          <Email
             width={25}
             height={25}
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
@@ -100,10 +100,10 @@ const SocialIcons = (props) => {
       >
         <NavLink
           style={{ color: "inherit" }}
-          to={{ pathname: "https://github.com/zio7711" }}
+          to={{ pathname: "www.linkedin.com/in/zio-tan" }}
           target="_blank"
         >
-          <YouTube
+          <LinkedIn
             width={25}
             height={25}
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
