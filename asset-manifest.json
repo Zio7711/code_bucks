@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/code_bucks/static/js/main.27d50376.chunk.js",
-    "main.js.map": "/code_bucks/static/js/main.27d50376.chunk.js.map",
+    "main.js": "/code_bucks/static/js/main.0a02cbf8.chunk.js",
+    "main.js.map": "/code_bucks/static/js/main.0a02cbf8.chunk.js.map",
     "runtime-main.js": "/code_bucks/static/js/runtime-main.cf29f846.js",
     "runtime-main.js.map": "/code_bucks/static/js/runtime-main.cf29f846.js.map",
     "static/css/2.679831fc.chunk.css": "/code_bucks/static/css/2.679831fc.chunk.css",
-    "static/js/2.2b8a898f.chunk.js": "/code_bucks/static/js/2.2b8a898f.chunk.js",
-    "static/js/2.2b8a898f.chunk.js.map": "/code_bucks/static/js/2.2b8a898f.chunk.js.map",
+    "static/js/2.df1ca778.chunk.js": "/code_bucks/static/js/2.df1ca778.chunk.js",
+    "static/js/2.df1ca778.chunk.js.map": "/code_bucks/static/js/2.df1ca778.chunk.js.map",
     "index.html": "/code_bucks/index.html",
     "static/css/2.679831fc.chunk.css.map": "/code_bucks/static/css/2.679831fc.chunk.css.map",
-    "static/js/2.2b8a898f.chunk.js.LICENSE.txt": "/code_bucks/static/js/2.2b8a898f.chunk.js.LICENSE.txt",
+    "static/js/2.df1ca778.chunk.js.LICENSE.txt": "/code_bucks/static/js/2.df1ca778.chunk.js.LICENSE.txt",
     "static/media/background_music.949cee7e.mp3": "/code_bucks/static/media/background_music.949cee7e.mp3",
     "static/media/patrick-tomasso.8ca90014.jpg": "/code_bucks/static/media/patrick-tomasso.8ca90014.jpg",
     "static/media/profile-img.6f1a69a6.png": "/code_bucks/static/media/profile-img.6f1a69a6.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.cf29f846.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.2b8a898f.chunk.js",
-    "static/js/main.27d50376.chunk.js"
+    "static/js/2.df1ca778.chunk.js",
+    "static/js/main.0a02cbf8.chunk.js"
   ]
 }
