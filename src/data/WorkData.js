@@ -10,16 +10,6 @@ export const Work = [
     github: "https://github.com/Zio7711/Z-Fashion",
   },
   {
-    id: 2,
-    name: "Data Visualization",
-    description:
-      "A data visualization website showing the retailer information.",
-    tags: ["vue", "less", "e-charts"],
-
-    demo: "https://e-charts-display.vercel.app/",
-    github: "https://github.com/Zio7711/E-charts_display",
-  },
-  {
     id: 3,
     name: "Z-Media",
     description:
@@ -29,6 +19,17 @@ export const Work = [
     demo: "https://z-media.vercel.app/",
     github: "https://github.com/Zio7711/Z-Media",
   },
+  {
+    id: 2,
+    name: "Data Visualization",
+    description:
+      "A data visualization website showing the retailer information.",
+    tags: ["vue", "less", "e-charts"],
+
+    demo: "https://e-charts-display.vercel.app/",
+    github: "https://github.com/Zio7711/E-charts_display",
+  },
+
   {
     id: 4,
     name: "Danny Jia Corps",
@@ -42,22 +43,12 @@ export const Work = [
   },
   {
     id: 5,
-    name: "Todo App(React + Redux)",
+    name: "Zio-type(React + Typescript + Redux)",
     description:
       "A todo app build using Redux-toolkit and framer-motion for smooth animations.",
     tags: ["react", "redux", "framer-motion"],
 
-    demo: "http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-    github: "https://github.com/codebucks27/React-Redux-Todo-App",
-  },
-  {
-    id: 6,
-    name: "Responsive Navigation Menu",
-    description:
-      "A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-    tags: ["react", "react-router", "css"],
-
-    demo: "http://react-responsive-navbar-codebucks27.vercel.app/",
-    github: "https://github.com/codebucks27/React-responsive-navbar",
+    demo: "https://zio-type.vercel.app/",
+    github: "https://github.com/Zio7711/zio_type",
   },
 ];

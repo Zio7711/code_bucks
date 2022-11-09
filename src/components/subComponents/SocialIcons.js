@@ -1,4 +1,4 @@
-import { Blog, Email, Github, LinkedIn } from "../AllSvgs";
+import { Blog, Email, Github, LinkedIn, YouTube } from "../AllSvgs";
 
 import { DarkTheme } from "../Themes";
 import { NavLink } from "react-router-dom";
@@ -100,10 +100,31 @@ const SocialIcons = (props) => {
       >
         <NavLink
           style={{ color: "inherit" }}
-          to={{ pathname: "www.linkedin.com/in/zio-tan" }}
+          to={{ pathname: "https://www.linkedin.com/in/zio-tan" }}
           target="_blank"
         >
           <LinkedIn
+            width={25}
+            height={25}
+            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
+          />
+        </NavLink>
+      </motion.div>
+
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.8 }}
+      >
+        <NavLink
+          style={{ color: "inherit" }}
+          to={{
+            pathname:
+              "https://www.youtube.com/channel/UCe8RFyFLOL0MNMvnl-o-9NA",
+          }}
+          target="_blank"
+        >
+          <YouTube
             width={25}
             height={25}
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
