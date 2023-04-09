@@ -37,8 +37,8 @@ export const Work = [
       "A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
     tags: ["react", "styledComponents", "react-router"],
 
-    demo: "https://master.d2wnn8g9g0psql.amplifyapp.com/",
-    github: "https://github.com/codebucks27/react-sidebar",
+    demo: "https://github.com/Zio7711/",
+    github: "https://github.com/Zio7711/",
     githubDisabled: true,
   },
   {

@@ -5,7 +5,7 @@ export const Blogs = [
     tags: ["javascript", "loop", "fundamental"],
     date: "26 March, 2022",
     imgSrc:
-      "https://tva2.sinaimg.cn/large/0060lm7Tly1ftg6oquldpj318g0p04ak.jpg",
+      "https://images.unsplash.com/photo-1676057914608-5ef96d784524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzQ5OTgzNQ&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2022/02/13/Which-type-of-loop-is-fastest-in-JavaScript/",
   },
   {
@@ -14,7 +14,7 @@ export const Blogs = [
     tags: ["algorithms", "fundamental", "computer science"],
     date: "6 February, 2022",
     imgSrc:
-      "https://tva4.sinaimg.cn/large/0060lm7Tly1ftg6oh633dj31hc0u0qbh.jpg",
+      "https://images.unsplash.com/photo-1675453040579-6fe4f4c21892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzUwMDQ1OQ&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2022/02/06/6-Algorithms-Every-Developer-Should-Know/",
   },
   {
@@ -23,7 +23,7 @@ export const Blogs = [
     tags: ["javascript", "closure", "fundamental"],
     date: "5 June, 2021",
     imgSrc:
-      "https://tva1.sinaimg.cn/large/87c01ec7gy1frmrtcq1lfj21hc0u0qc1.jpg",
+      "https://images.unsplash.com/photo-1676131967113-8bb0f2fa3bd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzUwMDQ4Mg&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2021/06/05/Closure/",
   },
   {
@@ -32,7 +32,7 @@ export const Blogs = [
     tags: ["react", "redux", "framer-motion"],
     date: "2 June, 2021",
     imgSrc:
-      "https://tva2.sinaimg.cn/large/87c01ec7gy1frmr2kh3xkj21kw0w0e8e.jpg",
+      "https://images.unsplash.com/photo-1677272821827-ab3a5e6fbcb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzUwMDY2NA&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2021/06/02/Cross-Site-Request-Forgery-XSRF/",
   },
   {
@@ -41,7 +41,7 @@ export const Blogs = [
     tags: ["javascript", "useful", "tips and tricks"],
     date: "6 Feb, 2022",
     imgSrc:
-      "https://tva1.sinaimg.cn/large/87c01ec7gy1frmmu5g157j21hc0u0x6q.jpg",
+      "https://images.unsplash.com/photo-1674835078224-a99bc09162ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzU5MTEwNQ&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2022/02/06/15-Javascript-codes-you-will-always-need/",
   },
   {
@@ -50,7 +50,7 @@ export const Blogs = [
     tags: ["typescript", "javascript", "migration"],
     date: "4 February, 2022",
     imgSrc:
-      "https://tva4.sinaimg.cn/large/87c01ec7gy1frmrs543ivj21hc0u0ths.jpg",
+      "https://images.unsplash.com/photo-1676265015528-b1cac402b0a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzUwMDcxMA&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2022/02/04/How-to-migrate-Javascript-web-apps-to-Typescript/",
   },
 
@@ -60,7 +60,7 @@ export const Blogs = [
     tags: ["tips and tricks", "javascript", "fundamental"],
     date: "11 July, 2021",
     imgSrc:
-      "https://tva4.sinaimg.cn/large/87c01ec7gy1frmmyljiepj21kw0w0qvf.jpg",
+      "https://images.unsplash.com/photo-1677087310258-98a485aa50bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzUwMDc0MQ&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2021/07/11/5-useful-tips-for-writing-JavaScript-code/",
   },
   {
@@ -69,7 +69,7 @@ export const Blogs = [
     tags: ["XSS", "cross site scripting", "web security"],
     date: "1 June, 2021",
     imgSrc:
-      "https://tva1.sinaimg.cn/large/0060lm7Tly1ftg6omusg9j31hc0u010h.jpg",
+      "https://images.unsplash.com/photo-1675002600712-7a96769918f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NzUwMDc2OQ&ixlib=rb-4.0.3&q=80&w=1080",
     link: "https://zio7711.gitee.io/2021/06/01/Cross-site-Scripting-known-as-XSS/",
   },
 ];
